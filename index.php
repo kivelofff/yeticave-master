@@ -1,4 +1,7 @@
 <?php
+/**
+ * @var $items
+ * */
 require_once "util.php";
 require_once("data.php");
 

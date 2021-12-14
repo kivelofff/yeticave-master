@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * @var $items
+ * */
 require_once('../data.php');
 $req_item = ['id' => '', 'title' => '', 'category' =>'', 'price' => 0, 'URL' => ''];
 if(isset($_GET['id'])) {
