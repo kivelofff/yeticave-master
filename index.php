@@ -14,7 +14,7 @@ $user_avatar = 'img/user.jpg';
 
 $page_content =  renderTemplate('templates/index.php', ['items' => $items]);
 
-$layout_content = renderTemplate('templates/layout.php', ['title' => 'Главная', 'content' => $page_content]);
+$layout_content = renderTemplate('templates/layout.php', ['title' => 'Главная', 'mainclass' => 'container', 'content' => $page_content]);
 
 print($layout_content);
 ?>

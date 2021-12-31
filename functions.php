@@ -3,11 +3,11 @@ function renderTemplate($template, $data) {
     if (!file_exists($template)) {
         return '';
     }
-
+    ob_start();
     if (is_array($data)) {
         extract($data);
     }
-    ob_start();
+
     include $template;
     return ob_get_clean();
 

@@ -1,12 +1,4 @@
-<?php
 
-/**
-* @var $title - page title
- * @var $content - paage content
-
- *
- **/
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -27,7 +19,7 @@
             <input type="search" name="search" placeholder="Поиск лота">
             <input class="main-header__search-btn" type="submit" name="find" value="Найти">
         </form>
-        <a class="main-header__add-lot button" href="add-lot.html">Добавить лот</a>
+        <a class="main-header__add-lot button" href="add.php">Добавить лот</a>
 
         <nav class="user-menu">
 
@@ -37,7 +29,7 @@
     </div>
 </header>
 
-<main class="container">
+<main class="<?=$mainclass?>">
     <?=$content?>
 </main>
 
